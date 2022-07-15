@@ -13,5 +13,5 @@ const x = localStorage.getItem('name');
 
 if (x === null) {
     alert('please fill out the guest book first');
-    location.assign('./register.html');
+    location.assign('dicoding-tugas-1/register');
 }
