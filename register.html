@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./asset/style.css" />
+        <link rel="stylesheet" href="./asset/media.css" />
+        <title>Register Guest</title>
+    </head>
+    <body>
+        <div id="bg" style="height: 100vh">
+            <div class="register">
+                <h1>Register</h1>
+                <form action="/index.html">
+                    <input id="name" type="text" placeholder="Name" />
+                    <button type="submit" id="register">Register</button>
+                </form>
+            </div>
+        </div>
+
+        <script>
+            const regist = document.getElementById('register');
+            regist.addEventListener('click', (e) => {
+                let name = document.getElementById('name');
+                localStorage.setItem('name', name.value);
+            });
+        </script>
+    </body>
+</html>
